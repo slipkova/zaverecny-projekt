@@ -1,38 +1,63 @@
+
 div.nav{
     width: 100%;
     padding: 0;
     overflow: visible;
-    background-color: #6C757D;
+    background-color: inherit;
     position: sticky;
     top: 0;
     z-index: 10;
+    border-bottom: 1px solid #c2956e;
 }
 
 div.nav-item{
-    margin: 10px 0 10px 0;
+    margin: 20px;
+    margin-left: 0;
     float: left;
+    vertical-align: middle;
+}
+
+.right{
+    font-family: 'Satisfy', cursive;
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: 50px;
 }
 
 div.nav-item:first-child{
     margin: 20px;
     padding-left: 100px;
-    top: -4px;
     position: relative;
 
+}
+
+div.nav-item a{
+    color: #2b2129;
+}
+
+div.nav-item a:hover{
+    color: #c2956e;
+    text-decoration: none;
 }
 
 
 div a.nav{
     display: block;
-    color: #e9eaec;
+    color: #2b2129;
     text-align: center;
     text-decoration: none;
 }
 
-div a.nav:hover, .btn:hover{
-    color: #fff;
+div a.nav:hover{
+    color: #c2956e;
     background-color: inherit;
 }
+
+
+
 body{
     background-color: #fdf6ee;
 }
@@ -49,3 +74,97 @@ aside{
     padding: 10px;
     border-left: 1px solid gray;
 }
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.carousel-caption{
+    padding-bottom: 300px;
+}
+
+img{
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.button{
+    background-color: #fdf6ee;
+    border-radius: 5px;
+    border: 1px solid #fdf6ee;
+    color: #fdf6ee;
+    text-decoration: none;
+    width: auto;
+    padding: 10px 15px;
+    background-color: transparent;
+}
+
+.button{
+    color: #fdf6ee;
+}
+
+.button:hover{
+    color: #2b2129;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #fdf6ee;
+}
+
+.clanek{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+footer{
+    background-color: #2b2129;
+    color: #fdf6ee;
+}
+
+.sub, .links, .contacts{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.links a{
+    color: #fdf6ee;
+    font-size: 5em;
+    padding-right: 20px;
+}
+
+.links a:hover{
+    color: #c2956e;
+}
+
+@media only screen and (max-width: 768px){
+    div.nav-item:first-child{
+        margin: 20px;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
