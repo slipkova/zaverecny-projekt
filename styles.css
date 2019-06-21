@@ -56,24 +56,20 @@ div a.nav:hover{
     background-color: inherit;
 }
 
-
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 body{
     background-color: #fdf6ee;
+    color: #2b2129;
 }
 
-section{
-    width: 600px;
-    float: left;
-    padding: 10px;
+.carousel{
+    margin-bottom: 100px;
 }
 
-aside{
-    width: 300px;
-    float: right;
-    padding: 10px;
-    border-left: 1px solid gray;
-}
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -86,13 +82,24 @@ aside{
     padding-bottom: 300px;
 }
 
-img{
+.carousel-item img{
     width: 100%;
     filter: brightness(50%);
 }
 
+.clanek img, .card img{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.clanek h1{
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+
 .button{
-    background-color: #fdf6ee;
     border-radius: 5px;
     border: 1px solid #fdf6ee;
     color: #fdf6ee;
@@ -102,30 +109,29 @@ img{
     background-color: transparent;
 }
 
-.button{
-    color: #fdf6ee;
-}
 
 .button:hover{
     color: #2b2129;
     text-decoration: none;
-}
-
-.button:hover{
     background-color: #fdf6ee;
 }
 
-.clanek{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: auto;
-    padding-right: auto;
+div.card .button{
+    border: 1px solid #2b2129;
+    color: #2b2129;
+}
+div.card .button:hover{
+    color: #c2956e;
+}
+
+main{
+    margin-bottom: 50px;
 }
 
 footer{
     background-color: #2b2129;
     color: #fdf6ee;
+    margin-top: 20px;
 }
 
 .sub, .links, .contacts{
@@ -145,11 +151,33 @@ footer{
     color: #c2956e;
 }
 
+.card{
+    margin-bottom: 100px;
+    background-color: inherit;
+    border: none;
+}
+
+div.card:first-child{
+    margin-top: 520px;
+}
+
 @media only screen and (max-width: 768px){
     div.nav-item:first-child{
         margin: 20px;
         padding-left: 0;
     }
+    div.nav-item {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .sub, .links, .contacts{
+        width: 100%;
+    }
+    .carousel-caption{
+        padding-bottom: 25px;
+    }
+
+
 }
 
 
